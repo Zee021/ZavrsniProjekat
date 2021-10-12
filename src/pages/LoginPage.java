@@ -10,7 +10,6 @@ public class LoginPage extends BasicPage {
 
 	public LoginPage(WebDriver driver, JavascriptExecutor js, WebDriverWait waiter) {
 		super(driver, js, waiter);
-
 	}
 
 	public WebElement getEmail() {
