@@ -21,31 +21,37 @@ public class LocationPopupPage extends BasicPage {
 	public WebElement getCloseElement() {
 		return this.driver.findElement(By.xpath("//*[@class = 'close-btn close-btn-white']"));
 	}
+
 	public WebElement getKeyword() {
 		return this.driver.findElement(By.id("locality_keyword"));
 	}
-	
+
 	public WebElement getLocationItem(String locationName) {
 		return this.driver.findElement(By.xpath("//li/a[contains(text(), '" + locationName + "')]/.."));
 	}
+
 	public WebElement getLocationInput() {
 		return this.driver.findElement(By.id("location_id"));
 	}
+
 	public WebElement getSubmit() {
 		return this.driver.findElement(By.name("btn_submit"));
 
 	}
+
 	public void openPopup() {
 		this.getLocationHeader().click();
 	}
-	
-	
-	public void setLocation() {
-		
+
+	public void setLocation(String locationName) {
+		this.getKeyword().click();
+		String dataValue = this.getLocationItem(locationName).getAttribute("data-value");
+		js.executeScript("arguments[0].value=arguments[1]", this.getLocationInput(), dataValue);
+		js.executeScript("arguments[0].click();", getSubmit());
 	}
-	
+
 	public void closePopup() {
 		this.getCloseElement().click();
 	}
-	
+
 }

@@ -1,5 +1,5 @@
 package pages;
 
-public class ProfilePage {
+public class ProfilePage extends BasicPage{
 
 }

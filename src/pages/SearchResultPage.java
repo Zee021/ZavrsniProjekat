@@ -1,5 +1,5 @@
 package pages;
 
-public class SearchResultPage {
+public class SearchResultPage extends BasicPage{
 
 }

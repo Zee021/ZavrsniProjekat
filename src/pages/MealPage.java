@@ -1,5 +1,5 @@
 package pages;
 
-public class MealPage {
+public class MealPage extends BasicPage{
 
 }

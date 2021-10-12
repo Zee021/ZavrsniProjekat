@@ -1,5 +1,5 @@
 package pages;
 
-public class AuthPage {
+public class AuthPage extends BasicPage{
 
 }

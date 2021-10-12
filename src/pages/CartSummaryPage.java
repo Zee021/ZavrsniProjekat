@@ -1,5 +1,5 @@
 package pages;
 
-public class CartSummaryPage {
+public class CartSummaryPage extends BasicPage{
 
 }
