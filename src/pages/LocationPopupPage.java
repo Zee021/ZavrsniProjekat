@@ -36,7 +36,7 @@ public class LocationPopupPage extends BasicPage {
 		return this.driver.findElement(By.name("btn_submit"));
 	}
 
-	public void openPopup() {
+	public void openPopUp() {
 		this.getLocationHeader().click();
 	}
 
@@ -50,7 +50,7 @@ public class LocationPopupPage extends BasicPage {
 		js.executeScript("arguments[0].click();", getSubmit());
 	}
 
-	public void closePopup() {
+	public void closePopUp() {
 		this.getCloseElement().click();
 	}
 }
