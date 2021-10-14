@@ -15,7 +15,5 @@ public abstract class BasicPage {
 		this.driver = driver;
 		this.js = js;
 		this.waiter = waiter;
-
 	}
-
 }
