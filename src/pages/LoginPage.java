@@ -24,11 +24,13 @@ public class LoginPage extends BasicPage {
 		return this.driver.findElement(By.name("btn_submit"));
 	}
 
-	public void login(String email, String password) {
+	public void login(String email, String password) throws InterruptedException {
 		this.getEmail().clear();
 		this.getEmail().sendKeys(email);
+		Thread.sleep(1000);
 		this.getPassword().clear();
 		this.getPassword().sendKeys(password);
+		Thread.sleep(1000);
 		this.getLoginButton().click();
 	}
 }
