@@ -20,13 +20,13 @@ public class ProfileTest extends BasicTest {
 	String loginMessage = "Login Successfull";
 	String loginMessageFail = "[ERROR] The Login Successfull message is not visible.";
 	String setupMessage = "Setup Successful";
-	String setupMessageFail = " [ERROR] The Setup Successfull message is not visible.";
+	String setupMessageFail = "[ERROR] The Setup Successfull message is not visible.";
 	String logoutMessage = "Logout Successfull!";
-	String logoutMessageFail = " [ERROR] The Logout Successfull message is not visible.";
+	String logoutMessageFail = "[ERROR] The Logout Successfull message is not visible.";
 	String imageMessage = "Profile Image Uploaded Successfully";
-	String imageMessageFail = " [ERROR] Image Upload failed";
+	String imageMessageFail = "[ERROR] Image Upload failed";
 	String imageDelete = "Profile Image Deleted Successfully";
-	String imageDeleteFail = "Profile Image Deleted Failed";
+	String imageDeleteFail = "[ERROR] Profile Image Deleted Failed";
 
 	@Test(priority = 1)
 	public void editProfile() throws InterruptedException {
