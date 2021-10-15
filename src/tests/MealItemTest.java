@@ -15,11 +15,11 @@ public class MealItemTest extends BasicTest {
 	String locationMessage2 = "Please Select Location";
 	String locationMessageFail = "[ERROR] No message displayed";
 	String cartMessage = "Meal Added To Cart";
-	String cartMessageFail = " [ERROR] Adding to cart was unsuccessful";
+	String cartMessageFail = "[ERROR] Adding to cart was unsuccessful";
 	String favoriteMessage = "Please login first!";
-	String favoriteMessageFail = " [ERROR]: 'Please login first!' message was not displayed.";
+	String favoriteMessageFail = "[ERROR]: 'Please login first!' message was not displayed.";
 	String favoriteMealMessage = "Product has been added to your favorites";
-	String favoriteMealMessageFail = " [ERROR] Product has not been added to your favorites";
+	String favoriteMealMessageFail = "[ERROR] Product has not been added to your favorites";
 	String mealMessage = "Meal Added To Cart";
 	String mealMessageFail = "[ERROR] The Meal Added To Cart message is not visible.";
 	String cartRemoveMessage = "All meals removed from Cart successfully";
